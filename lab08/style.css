@@ -1,0 +1,36 @@
+body {
+    background-color: #FFECB8;
+    color: #343434;
+    margin: 20px;
+}
+a { color: #245B60; }
+h1, h2 { color: #873D50; }
+nav {
+    background-color: #B7DED2;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+nav a { color: #245B60; }
+nav a:hover { background-color: #F6A6B2; }
+
+.bio-banner { width: 100%; height: auto; }
+.copyright { float: left; margin-right: 20px; }
+.motto { text-align: right; }
+.clear { clear: both; }
+
+
+.row1, .row2 {
+    display: flex;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+.row1 { background-color: #B7DED2; }
+.row2 { background-color: #F7C297; }
+.column { flex: 1; padding: 15px; }
+
+
+.row2 iframe { width: 100%; }
+input[type="text"], textarea { width: 90%; padding: 8px; margin-bottom: 12px; }
+textarea { height: 100px; }
+input[type="submit"] { padding: 8px 16px; margin-top: 15px; }
