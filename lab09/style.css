@@ -1,0 +1,80 @@
+body {
+    background-color: #FFECB8;
+    color: #343434;
+    margin: 20px;
+}
+a { color: #245B60; }
+h1, h2 { color: #873D50; }
+nav {
+    background-color: #B7DED2;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+nav a { color: #245B60; }
+nav a:hover { background-color: #F6A6B2; }
+
+.bio-banner { width: 100%; height: auto; }
+.copyright { float: left; margin-right: 20px; }
+.motto { text-align: right; }
+.clear { clear: both; }
+
+
+.row1, .row2 {
+    display: flex;
+    gap: 30px;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+.row1 { background-color: #B7DED2; }
+.row2 { background-color: #F7C297; }
+.column { flex: 1; min-width: 0; padding: 15px; }
+
+
+.row2 iframe { width: 100%; border: 0; border-radius: 10px; }
+.contact-main img { max-width: 100%; height: auto; }
+.contact-main input[type="text"], .contact-main textarea {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    border: 1px solid #873D50;
+    border-radius: 6px;
+    font: inherit;
+}
+.contact-main textarea { min-height: 100px; resize: vertical; }
+.contact-main fieldset { border: 0; padding: 0; margin: 16px 0; }
+.contact-main legend { margin-bottom: 8px; }
+.contact-main input[type="submit"] {
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: #245B60;
+    color: white;
+    border: 0;
+    border-radius: 6px;
+    font: inherit;
+    cursor: pointer;
+}
+
+/* Each skills container takes half of the flex row. */
+.skills-heading { text-align: center; }
+.skills-row { display: flex; align-items: center; margin: 30px 0; }
+.skillstable, .skillsimage { flex-basis: 50%; min-width: 0; }
+.skillstable { overflow-x: auto; }
+.skillstable table { margin: 0 auto; border-collapse: collapse; }
+.skillstable caption { padding-bottom: 12px; font-weight: bold; }
+.skillstable th, .skillstable td { border: 1px solid #873D50; padding: 10px; }
+.skillstable th { background-color: #B7DED2; }
+.skillstable .evenrow { background-color: #FFF5DB; }
+.skillsimage { text-align: center; }
+.skillsimage img { width: 280px; max-width: 90%; height: auto; }
+
+/* Stack the columns on small screens so the content stays readable. */
+@media (max-width: 700px) {
+    .row1, .row2, .skills-row { flex-direction: column; }
+    .row1, .row2 { padding: 16px; gap: 16px; }
+    .column { padding: 0; }
+    .skills-row { align-items: stretch; gap: 24px; }
+}
