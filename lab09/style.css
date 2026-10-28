@@ -71,10 +71,5 @@ nav a:hover { background-color: #F6A6B2; }
 .skillsimage { text-align: center; }
 .skillsimage img { width: 280px; max-width: 90%; height: auto; }
 
-/* Stack the columns on small screens so the content stays readable. */
-@media (max-width: 700px) {
-    .row1, .row2, .skills-row { flex-direction: column; }
-    .row1, .row2 { padding: 16px; gap: 16px; }
-    .column { padding: 0; }
-    .skills-row { align-items: stretch; gap: 24px; }
-}
+
+
