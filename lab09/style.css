@@ -58,7 +58,7 @@ nav a:hover { background-color: #F6A6B2; }
     cursor: pointer;
 }
 
-/* Each skills container takes half of the flex row. */
+
 .skills-heading { text-align: center; }
 .skills-row { display: flex; align-items: center; margin: 30px 0; }
 .skillstable, .skillsimage { flex-basis: 50%; min-width: 0; }
