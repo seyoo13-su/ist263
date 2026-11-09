@@ -19,10 +19,10 @@
         document.getElementById("correct").innerHTML = "<span style='color: green;'> False is the correct answer!</span>"
     }
      function change (){
-        document.getElementById("arrow").setAttribute = ("src", "https://peopel-su.github.io/ist263/images/arrow_over.png")
+        document.getElementById("arrow").setAttribute("src", "https://peopel-su.github.io/ist263/images/arrow_over.png")
     }
       function changeBack (){
-        document.getElementById("arrow").setAttribute = ("src", "https://peopel-su.github.io/ist263/images/arrow_over.png")
+        document.getElementById("arrow").setAttribute("src", "https://peopel-su.github.io/ist263/images/arrow.png")
     }
     function colorChange (){
         document.getElementById("first").style.color="#000000"
@@ -31,12 +31,17 @@
 </head>
 
 <body>
-    <h1> Header </h1>
+    <h1 id="first"> Header </h1>
     <h1> My Javascript Quiz </h1>
     <p> Java and Javascript are the same thing. </p>
     <p onclick="wrongAnswer();" id="wrong"> True </p>
     <p onclick="rightAnswer();" id="correct"> False </p>
-    <img id="arrow" src="https://peopel-su.github.io/ist263/images/arrow.png" alt="arrow icon" onmouseover="change()" onmouseout="changeBack()" onclick="colorChange()";>
+    <img id="arrow" 
+    src="https://peopel-su.github.io/ist263/images/arrow.png" 
+    alt="arrow icon" 
+    onmouseover="change()" 
+    onmouseout="changeBack()" 
+    onclick="colorChange()";>
 
 </body>
 
