@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+<head> 
+    <meta charset="utf-8">   
+     <meta name="viewport" content="width=device-width", initial-scale="1.0">
+
+    <title> Javascript CONT.  </title>
+    <style>
+        #first {color:crimson;}
+    </style>
+
+    <script>
+    function wrongAnswer (){
+        document.getElementById("wrong").innerHTML = "<span style='color: red;'> True is the wrong answer!</span>"
+    }
+    function rightAnswer (){
+        document.getElementById("correct").innerHTML = "<span style='color: green;'> False is the correct answer!</span>"
+    }
+     function change (){
+        document.getElementById("arrow").setAttribute = ("src", "https://peopel-su.github.io/ist263/images/arrow_over.png")
+    }
+      function changeBack (){
+        document.getElementById("arrow").setAttribute = ("src", "https://peopel-su.github.io/ist263/images/arrow_over.png")
+    }
+    function colorChange (){
+        document.getElementById("first").style.color="#000000"
+    }
+    </script>
+</head>
+
+<body>
+    <h1> Header </h1>
+    <h1> My Javascript Quiz </h1>
+    <p> Java and Javascript are the same thing. </p>
+    <p onclick="wrongAnswer();" id="wrong"> True </p>
+    <p onclick="rightAnswer();" id="correct"> False </p>
+    <img id="arrow" src="https://peopel-su.github.io/ist263/images/arrow.png" alt="arrow icon" onmouseover="change()" onmouseout="changeBack()" onclick="colorChange()";>
+
+</body>
+
+</html>
+
